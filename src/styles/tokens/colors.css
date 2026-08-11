@@ -1,0 +1,27 @@
+:root{
+/* Brand core — from the supplied Adobe Color theme */
+--blue-700:#2F5C87;--blue-600:#4586BF;--blue-500:#4B7DBF;--blue-400:#6FA3DE;--blue-300:#91BBF2;--blue-200:#BFD8F8;--blue-100:#E3EDFC;--blue-050:#F2F7FE;
+--gold-700:#8A7303;--gold-600:#B39504;--gold-500:#D9B504;--gold-400:#E8C93F;--gold-300:#F2DE84;--gold-200:#F8ECBB;--gold-100:#FCF6E0;
+--clay-700:#5A3D1B;--clay-600:#734E22;--clay-500:#8C602A;--clay-400:#AE854F;--clay-300:#C9AC80;--clay-200:#E3D3BC;--clay-100:#F3EBE0;
+
+/* Neutrals — warm-leaning greys tuned to sit beside clay */
+--ink-900:#1A1F26;--ink-800:#2A313A;--ink-700:#3D4652;--ink-600:#5A6472;--ink-500:#7C8695;--ink-400:#A3ACB8;--ink-300:#C7CDD6;--ink-200:#E1E5EA;--ink-100:#EFF1F4;--ink-050:#F7F8FA;--white:#FFFFFF;
+
+/* Semantic status */
+--success-500:#3E8E63;--success-100:#E3F1E9;
+--warning-500:var(--gold-500);--warning-100:var(--gold-100);
+--danger-500:#C6503C;--danger-100:#FAE7E3;
+--info-500:var(--blue-500);--info-100:var(--blue-100);
+
+/* Semantic aliases — prefer these in components */
+--brand:var(--blue-500);--brand-strong:var(--blue-700);--brand-soft:var(--blue-100);--brand-on:var(--white);
+--accent:var(--gold-500);--accent-soft:var(--gold-100);--accent-on:var(--ink-900);
+--earth:var(--clay-500);--earth-soft:var(--clay-100);
+
+--text-heading:var(--ink-900);--text-body:var(--ink-700);--text-muted:var(--ink-500);--text-inverse:var(--white);--text-link:var(--blue-600);--text-link-hover:var(--blue-700);
+
+--surface-page:var(--ink-050);--surface-card:var(--white);--surface-sunken:var(--ink-100);--surface-inverse:var(--ink-900);--surface-brand:var(--blue-500);--surface-tint:var(--blue-050);
+
+--border-subtle:var(--ink-200);--border-default:var(--ink-300);--border-strong:var(--ink-400);--border-brand:var(--blue-400);
+--focus-ring:var(--blue-400);
+}

@@ -1,0 +1,11 @@
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--text-paragraph);text-wrap:pretty}
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--text-heading);letter-spacing:var(--ls-heading);margin:0}
+h1{font-size:var(--size-display-m);font-weight:var(--wght-semibold);line-height:var(--lh-tight);letter-spacing:var(--ls-display)}
+h2{font-size:var(--size-heading-l);font-weight:var(--wght-semibold);line-height:var(--lh-snug)}
+h3{font-size:var(--size-heading-m);font-weight:var(--wght-medium);line-height:var(--lh-snug)}
+h4{font-size:var(--size-heading-s);font-weight:var(--wght-medium);line-height:var(--lh-snug)}
+p{margin:0 0 var(--space-5)}
+a{color:var(--text-link);text-decoration-color:color-mix(in srgb,var(--text-link) 35%,transparent);text-underline-offset:2px;transition:color var(--dur-fast) var(--ease-out)}
+a:hover{color:var(--text-link-hover);text-decoration-color:currentColor}
+:focus-visible{outline:none;box-shadow:var(--ring-focus);border-radius:var(--radius-xs)}

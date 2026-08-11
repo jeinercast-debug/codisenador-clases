@@ -1,0 +1,43 @@
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/elevation.css";
+@import "./tokens/base.css";
+@import "./momentos.css";
+
+html,body{margin:0;height:100%}
+body{background:var(--surface-page)}
+#root{min-height:100%}
+a{color:var(--text-link)}
+a:hover{color:var(--text-link-hover)}
+*{box-sizing:border-box}
+
+/* Scrollbar sutil */
+*::-webkit-scrollbar{width:10px;height:10px}
+*::-webkit-scrollbar-thumb{background:var(--ink-300);border-radius:999px;border:2px solid var(--surface-page)}
+*::-webkit-scrollbar-track{background:transparent}
+
+/* Animación de entrada */
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp var(--dur-slow) var(--ease-out) both}
+
+/* Spinner */
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{animation:spin .8s linear infinite}
+
+/* Pulso de carga */
+@keyframes pulseSoft{0%,100%{opacity:1}50%{opacity:.55}}
+.pulse-soft{animation:pulseSoft 1.4s var(--ease-in-out) infinite}
+
+/* ---------- Impresión: solo el guión, limpio ---------- */
+@media print{
+  @page{margin:16mm}
+  body{background:#fff}
+  .no-print{display:none !important}
+  .print-area{display:block !important}
+  .script-block{break-inside:avoid;page-break-inside:avoid}
+  .app-shell-sidebar{display:none !important}
+  .app-shell-main{padding:0 !important;overflow:visible !important}
+  h1,h2,h3,h4{color:#111 !important}
+}

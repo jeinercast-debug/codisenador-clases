@@ -1,0 +1,11 @@
+:root{
+/* 4px base, with a 6px half-step for tight control chrome */
+--space-0:0;--space-1:4px;--space-2:6px;--space-3:8px;--space-4:12px;--space-5:16px;--space-6:20px;--space-7:24px;--space-8:32px;--space-9:40px;--space-10:56px;--space-11:72px;--space-12:96px;
+
+--gutter-page:24px;--gutter-page-wide:48px;--max-width-prose:64ch;--max-width-page:1180px;
+
+/* Rounded-first radii — Fredoka's terminals set the tone */
+--radius-xs:6px;--radius-sm:10px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--radius-pill:999px;
+
+--control-h-sm:32px;--control-h-md:40px;--control-h-lg:48px;
+}

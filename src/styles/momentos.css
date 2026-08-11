@@ -1,0 +1,9 @@
+/* Los 5 momentos pedagógicos — paleta derivada de Fredoka Blue, extendida con
+   morado (debate) y naranja (enganche) que armonizan con el azul de marca. */
+:root{
+  --m-enganche-bg:#FDECD8;   --m-enganche-fg:#9A5B12;   --m-enganche-solid:#E8944B;
+  --m-concepto-bg:var(--blue-100); --m-concepto-fg:var(--blue-700); --m-concepto-solid:var(--blue-500);
+  --m-practica-bg:var(--success-100); --m-practica-fg:#2C6A49; --m-practica-solid:var(--success-500);
+  --m-debate-bg:#EDE4F7;     --m-debate-fg:#5E3A8C;     --m-debate-solid:#8257C4;
+  --m-cierre-bg:var(--ink-100); --m-cierre-fg:var(--ink-700); --m-cierre-solid:var(--ink-500);
+}

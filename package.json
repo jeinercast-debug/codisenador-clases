@@ -1,0 +1,28 @@
+{
+  "name": "codisenador-clases",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Co-diseñador de Clases — de un tema a una sesión planificada (mapa + guión) para Jeiner Castellanos-Barliza.",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "vite build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "preview": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.116.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "multer": "^2.2.0",
+    "officeparser": "^7.5.1",
+    "sirv": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11"
+  }
+}
