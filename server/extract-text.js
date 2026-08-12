@@ -22,7 +22,10 @@ export async function extractTextFromBuffer(buffer, filename) {
   }
 
   const raw = await officeparser.parseOffice(buffer);
-  const text = typeof raw === 'string' ? raw : String(raw ?? '');
+  let text = '';
+  if (typeof raw === 'string') text = raw;
+  else if (raw && typeof raw === 'object') text = raw.text || raw.data || JSON.stringify(raw);
+  else text = String(raw ?? '');
   if (!text.trim()) {
     throw Object.assign(new Error('No se pudo extraer texto del archivo. Verificá que no esté vacío.'), { status: 422 });
   }
