@@ -21,8 +21,9 @@ export async function extractTextFromBuffer(buffer, filename) {
     );
   }
 
-  const text = await officeparser.parseOffice(buffer);
-  if (!text || !text.trim()) {
+  const raw = await officeparser.parseOffice(buffer);
+  const text = typeof raw === 'string' ? raw : String(raw ?? '');
+  if (!text.trim()) {
     throw Object.assign(new Error('No se pudo extraer texto del archivo. Verificá que no esté vacío.'), { status: 422 });
   }
   return text.trim();
